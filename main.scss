@@ -1,0 +1,174 @@
+@import './scss/reset';
+@import './scss/variable';
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(96, 95, 95);
+  
+}
+
+
+
+
+form {
+    width:350px;
+    margin: .5em auto 0 auto;
+    background-color: $white-color;
+    box-shadow: -4px -4px 5px rgb(83, 82, 82);
+ 
+
+    h2 {
+        margin-bottom: 2em;
+        text-align: center;
+    }
+   
+}
+ section{
+    width: 90%;
+    margin: 0 auto;
+
+}
+#log_in, #entregas {
+    border-radius: .5em;
+    border: solid .1em $purple-color;
+    padding-top: .9em;
+
+}
+
+input[type='text'], select[name='select'] {
+    display: block;
+    width: 80%;
+    margin: 0 auto 2em auto;
+    border: solid .10em rgb(205, 201, 201);
+    border-radius: .50em;
+    padding: .6em;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+   
+}
+p {
+    text-align: center;
+    font-weight: 400;
+    margin: 2em 0;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    text-indent: 25pt;
+    color: rgba(192, 190, 190, 0.93);
+    font-size: 1.1em;
+}
+
+
+
+
+button {
+    display: block;
+    background-color:  $purple-color;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.1em;
+    font-size: 1.2em;
+    width: 60%;
+    margin: 2em auto;
+    border: none;
+    border-radius: .5em;
+    color: $white-color;
+    font-weight: bold;
+    
+}
+
+@media screen and (min-width:600px) {
+    body {
+        background-color: $white-color;
+      
+    }
+
+
+    form {
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: none;
+
+       section {
+            padding-top: .5em;
+          
+            
+        }
+    }
+
+    input[type='text'], select[name='select'] {
+        display: block;
+        width: 80%;
+        margin: 2em auto;
+
+
+    }
+    #first {
+       float: left;
+        width: 48%;
+        margin: 0 ;
+        
+        input[type='text'] {
+            margin: 2.5em auto;
+        }
+    }
+    #second {
+        float: right;
+        width: 48%;
+        margin: 0;
+        margin-bottom: 1em;
+       
+        
+    }
+
+    #log_in {
+        padding-bottom: 4.4em;
+    }
+
+    button {
+        clear: both;
+    }
+   
+}
+
+
+.icon {
+    position: relative;
+    display: block;
+    margin-left: .5em;
+    margin-bottom: .5em;
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color:  $purple-color;
+}
+
+
+.icon::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: .25em;
+    height: 1em;
+    background-color: $white-color;
+    left: 42%;
+    top: 40%;
+
+}
+
+.icon::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: .3em;
+    height: .3em;
+    background-color: $white-color;
+    left: 42%;
+    top: 10%;
+    border-radius: 50%;
+
+}
